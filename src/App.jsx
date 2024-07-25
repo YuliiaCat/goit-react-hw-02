@@ -3,6 +3,7 @@ import './App.css'
 import Description from './components/Description/Description';
 import Options from './components/Options/Options';
 import Feedback from './components/Feedback/Feedback';
+import Notification from './components/Notification/Notification';
 
 function App() {
   const [rate, setRate] = useState(() => {
@@ -59,7 +60,7 @@ function App() {
           total={totalFeedback}
           positiveFeedback={positiveFeedback} />
       ) : (
-        <p>No feedback yet</p>
+        <Notification />
       )}
     </>
   );
