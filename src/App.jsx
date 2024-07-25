@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import Description from './Description/Description'
-import Options from './Options/Options';
-import Feedback from './Feedback/Feedback';
+import Description from './components/Description/Description';
+import Options from './components/Options/Options';
+import Feedback from './components/Feedback/Feedback';
 
 function App() {
   const [rate, setRate] = useState(() => {
